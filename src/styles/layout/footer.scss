@@ -1,0 +1,79 @@
+.footer {
+  padding-top: 80px;
+  padding-bottom: 101px;
+  background-image: url($img-url + 'footer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 31px;
+}
+
+.footer__about, .footer__categories, .footer__mailing {
+  grid-column: span 2;
+}
+
+.footer__header {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.footer__desc {
+  line-height: 150%;
+}
+
+.footer__categories-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @include reset-link();
+}
+.footer__categories-category {
+  background-color: #0F0F0F;
+  margin-bottom: 20px;
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.footer__mailing-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__mailing-desc {
+  margin-bottom: 37px;
+}
+.footer__mailing-form-email {
+  max-width: 55%;
+  min-width: 190px;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+.footer__mailing-form-submit {
+  max-width: 45%;
+  min-width: 140px;
+  padding: 10px 20px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  background-color: #0F0F0F;
+  color: #FFFFFF;
+  border: none;
+  margin-top: 2px;
+  &:hover {
+    opacity: .7;
+  }
+}

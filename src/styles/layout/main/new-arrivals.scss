@@ -1,0 +1,36 @@
+.new-arrivals__header {
+  @extend %section-name;
+  margin-bottom: 40px;
+}
+
+.new-arrivals__line:after {
+  @include line();
+  margin: 0 auto 81px auto;
+}
+
+.new-arrivals__goods {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 23px;
+  grid-row-gap: 40px;
+  margin-bottom: 150px;
+}
+.new-arrivals__good {
+  grid-column: span 3;
+}
+
+.new-arrivals__good-img {
+  @extend %good-img;
+}
+.new-arrivals__good-name {
+  @extend %good-name;
+}
+.new-arrivals__good-price {
+  @extend %good-price;
+}
+
+.new-arrivals__goods-carousel {
+  display: none;
+  max-width: 500px;
+  margin: 0 auto;
+}

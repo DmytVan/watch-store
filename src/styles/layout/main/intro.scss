@@ -1,0 +1,47 @@
+.intro {
+  $header-size: 128px;
+  min-height: intro-bg-height($header-size);
+  background-image: url($img-url + 'intro-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-top: 160px;
+}
+
+.intro__header-container {
+  $deader-square: 320px;
+  margin: 0 auto 80px auto;
+  width: $deader-square;
+  height: $deader-square;
+  border: 4px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+
+}
+.intro__header-logo {
+  font-family: 'PostNoBillsJaffna';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  text-align: center;
+  display: block;
+  border-bottom: 2px solid #FFFFFF;
+  margin-bottom: 7px;
+}
+.intro__header-city {
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.intro__description {
+  max-width: 731px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}

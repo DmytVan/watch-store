@@ -1,0 +1,111 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  margin-bottom: 120px;
+}
+.cards-sm {
+  grid-column: span 11;
+  min-height: 600px;
+}
+.cards-lg {
+  grid-column: span 13;
+  min-height: 600px;
+}
+.cards-lg-desktop-first {
+  grid-row-start: -1;
+}
+
+.card-second {
+  padding: 93px 80px;
+  .card-header {
+    margin-bottom: 50px;
+  }
+  .card-line {
+    margin-bottom: 50px;
+  }
+  .card-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+  }
+}
+.card-content-carousel {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.card-content-carousel {
+  display: none;
+}
+.card-header {
+  @extend %section-name;
+}
+.card-line:after {
+  @include line();
+  margin: 0 auto;
+}
+
+.card-content {
+  @include reset-link();
+}
+.card-link {
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border: 1px solid #FFFFFF;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.card-item-img {
+  @extend %good-img;
+}
+.card-watch-name {
+  @extend %good-name;
+}
+.card-watch-price {
+  @extend %good-price;
+}
+
+.card-first {
+  padding: 484px 0 100px 0;
+  background-image: url($img-url + 'card-bg-1.jpg');
+  background-size: cover;
+  background-position: center;
+  .card-header {
+    margin-bottom: 30px;
+  }
+  .card-line {
+    margin-bottom: 30px;
+  }
+  .card-content {
+    text-align: center;
+  }
+}
+
+.card-third {
+  background-image: url($img-url + 'card-bg-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-fourth {
+  padding: 100px 0;
+  .card-header {
+    margin-bottom: 40px;
+  }
+  .card-line {
+    margin-bottom: 40px;
+  }
+  .card-content {
+    text-align: center;
+  }
+  .card-content-desc {
+    max-width: 45%;
+    line-height: 21px;
+    margin: 0 auto 61px auto;
+  }
+}

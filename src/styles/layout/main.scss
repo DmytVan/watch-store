@@ -1,0 +1,32 @@
+@import "main/intro";
+@import "main/cards";
+@import "main/new-arrivals";
+@import "main/brands";
+
+%section-name {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+%good-img {
+  padding: 55px 22px;
+  background-color: #191B1C;;
+  margin-bottom: 25px;
+}
+%good-name {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+%good-price {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}

@@ -1,0 +1,15 @@
+.brands__header {
+  @extend %section-name;
+  margin-bottom: 40px;
+}
+.brands__line:after {
+  @include line();
+  margin: 0 auto 40px auto;
+}
+
+.brands__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  margin-bottom: 80px;
+}

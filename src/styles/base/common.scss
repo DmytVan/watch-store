@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  background-color: #000000;
+  color: #fff;
+  min-width: 280px;
+}
+
+.wrapper {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 10px;
+}
