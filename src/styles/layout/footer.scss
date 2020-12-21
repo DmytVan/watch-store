@@ -62,6 +62,9 @@
   border: none;
   padding: 10px 20px;
   color: white;
+  &::placeholder {
+    color: #FFFFFF;
+  }
 }
 .footer__mailing-form-submit {
   max-width: 45%;

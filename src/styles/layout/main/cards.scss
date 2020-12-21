@@ -33,6 +33,13 @@
   max-width: 450px;
   margin: 0 auto;
 }
+.carousel-item {
+  text-align: center;
+}
+.carousel-item img{
+  display: block;
+  margin: 0 auto;
+}
 .card-content-carousel {
   display: none;
 }
@@ -96,6 +103,13 @@
   padding: 100px 0;
   .card-header {
     margin-bottom: 40px;
+    font-family: "PlayfairDisplay";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
   }
   .card-line {
     margin-bottom: 40px;
