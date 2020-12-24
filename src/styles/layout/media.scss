@@ -14,14 +14,15 @@
   .header__start-info {
     flex-direction: column;
     margin-bottom: 20px;
+    padding: 0 15px;
   }
   .header__start-info-schedule {
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
   .header__start-info-sing-in {
     align-self: flex-end;
-    font-size: 20px;
   }
   .header__navigation-container {
     margin-bottom: 20px;

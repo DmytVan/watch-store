@@ -14,9 +14,16 @@
   @include reset-link();
 }
 
-.header__start-info-schedule {
-  padding-left: 30px;
-  background: url($img-url + 'png/phone.png') left center no-repeat;
+.header__start-info-schedule-item {
+  margin: 10px;
+  &:first-child {
+    margin-left: 0;
+    padding-left: 30px;
+    background: url($img-url + 'png/phone.png') left center no-repeat;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .header__start-info-sing-in {
